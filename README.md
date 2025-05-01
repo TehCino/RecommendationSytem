@@ -66,7 +66,7 @@ Benchmarked Models:
 </p>
 
 <p align="center">
-  <img src="Meals_Reco_by_CategoryId_Results.jpg" width="600"/>
+  <img src="Meals_Reco_by_CategoryId_Result.jpg" width="600"/>
   <br/>
   <em>Output: Top meals recommended based on category popularity</em>
 </p>
