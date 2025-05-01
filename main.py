@@ -9,7 +9,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 # Load dataset
-file_path = r"C:\Users\chan-\OneDrive\Desktop\Y4\BTRecommendationV7.csv"  # Update with actual path
+file_path = r"" 
 df = pd.read_csv(file_path)
 
 # Convert data types
