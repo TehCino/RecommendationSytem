@@ -10,12 +10,16 @@ This repository contains a **hybrid meal recommendation system** that blends:
 
 The FastAPI server hosts the hybrid (non-weighted) model for interactive recommendation via Swagger UI.
 
+User interaction data is captured via **Google Analytics 4 (GA4)** and linked to meal metadata using **BigQuery** before model training.
+
 ## 🔧 Technologies Used
 
-| Tool            | Purpose                          |
-|-----------------|----------------------------------|
-| Python          | Core programming language        |
-| Pandas, NumPy   | Data preprocessing and handling  |
-| Scikit-learn    | ML algorithms (SVD, TF-IDF, NN)  |
-| FastAPI         | API deployment                   |
-| Jupyter Notebook| Model evaluation & experimentation |
+| Tool / Platform            | Purpose                                                                 |
+|----------------------------|-------------------------------------------------------------------------|
+| **Python**                 | Core language for data processing and model development                |
+| **Pandas, NumPy**          | Data manipulation and numerical operations                              |
+| **Scikit-learn**           | Machine learning models (SVD, TF-IDF, Nearest Neighbors)                |
+| **FastAPI**                | API deployment for serving real-time recommendations                    |
+| **Jupyter Notebook**       | Model development and performance evaluation                            |
+| **Google Analytics 4 (GA4)** | Captures user behaviour (e.g., meal views and purchases)             |
+| **BigQuery**               | Links GA4 user behaviour data with meal metadata for model input        |
