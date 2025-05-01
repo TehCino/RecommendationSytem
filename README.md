@@ -7,7 +7,7 @@ showcasing the implementation and evaluation of different recommendation techniq
 **Excludes** dataset due to privacy concerns
 
 ---
-## 📌 Project Overview
+## Project Overview
 
 This recommendation system integrates:
 - **Collaborative Filtering (SVD)** – Learns user preferences from historical meal interaction data.
@@ -20,7 +20,7 @@ User behaviour data (e.g., meal views and purchases) was tracked via **Google An
 
 ---
 
-## 🔧 Technologies Used
+## Technologies Used
 
 | Tool / Platform            | Purpose                                                                 |
 |----------------------------|-------------------------------------------------------------------------|
@@ -32,3 +32,19 @@ User behaviour data (e.g., meal views and purchases) was tracked via **Google An
 | **GA4 (Google Analytics 4)** | User event tracking (views, purchases)                              |
 | **BigQuery**               | SQL-based data linking (user behaviour ↔ meal metadata)                |
 
+---
+
+## Model Evaluation
+
+Evaluated on test data using:
+- **Precision@5**
+- **Recall@5**
+- **F1 Score@5**
+
+Benchmarked Models:
+- Collaborative Filtering (SVD)
+- Content-Based Filtering (TF-IDF)
+- Hybrid (non-weighted)
+- Hybrid (weighted)
+
+---
