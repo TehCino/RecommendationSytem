@@ -103,3 +103,19 @@ Benchmarked Models:
 | `Meals_Reco_by_id_Results.jpg`        | Output screen: Recommended meals based on user behavior and interaction history |
 
 ---
+## Future Development
+
+To further enhance accuracy, diversity, and scalability, several future improvements are planned:
+
+- **Neural Collaborative Filtering (NCF):** Explore deep learning models to capture non-linear user-item interactions beyond traditional matrix factorization (SVD). NCF leverages multi-layer perceptrons to learn more expressive relationships between users and items [12].
+
+- **Cold-Start Solutions:** Integrate geolocation-based recommendations to suggest nearby meals based on the user’s current location, addressing the challenge of new users with no interaction history [1][6].
+
+- **A/B Testing:** Evaluate real-world performance by serving different recommendation models to user groups and measuring engagement metrics like click-through rate (CTR), conversion rate, and average order value [7][21].
+
+- **Production Deployment:** Extend the current FastAPI setup into a production-ready system with:
+  - Backend integration
+  - Scalable real-time API endpoints
+  - Security and data privacy compliance
+
+These advancements aim to transition the system from a functional prototype into a robust, scalable recommendation engine suitable for real user traffic and operational environments.
