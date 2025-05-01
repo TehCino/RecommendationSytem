@@ -9,7 +9,7 @@ from scipy.sparse import csr_matrix
 from sklearn.decomposition import TruncatedSVD
 
 # Load and preprocess
-file_path = r"C:\Users\chan-\OneDrive\Desktop\Y4\BTRecommendationV7.csv"
+file_path = r""
 df = pd.read_csv(file_path)
 
 df['order_meal_id'] = df['order_meal_id'].astype(str)
