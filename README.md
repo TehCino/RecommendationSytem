@@ -3,14 +3,16 @@ Bachelor’s Thesis titled "Personalized Meal Recommendation System", showcasing
 
 ## 📌 Project Overview
 
-This repository contains a **hybrid meal recommendation system** that blends:
-- **Collaborative Filtering (SVD)** using user-meal interaction data
-- **Content-Based Filtering** using TF-IDF on meal category descriptions
-- **Hybrid Approaches** (both weighted and non-weighted)
+This recommendation system integrates:
+- **Collaborative Filtering (SVD)** – Learns user preferences from historical meal interaction data.
+- **Content-Based Filtering (TF-IDF + Nearest Neighbors)** – Suggests meals with similar categories or characteristics.
+- **Hybrid Recommendation** – Combines both methods (non-weighted and weighted versions).
 
-The FastAPI server hosts the hybrid (non-weighted) model for interactive recommendation via Swagger UI.
+A real-time API was deployed using **FastAPI** and tested via **Swagger UI** in PyCharm.
 
-User interaction data is captured via **Google Analytics 4 (GA4)** and linked to meal metadata using **BigQuery** before model training.
+User behaviour data (e.g., meal views and purchases) was tracked via **Google Analytics 4 (GA4)** and joined with metadata (e.g., meal categories) using **Google BigQuery**.
+
+---
 
 ## 🔧 Technologies Used
 
