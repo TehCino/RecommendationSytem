@@ -1,6 +1,12 @@
 # RecommendationSytem
-Bachelor’s Thesis titled "Personalized Meal Recommendation System", showcasing the implementation and evaluation of different recommendation techniques (Collaborative Filtering, Content-Based, and Hybrid). Includes API deployment using FastAPI and performance benchmarking using Precision, Recall, and F1 Score.
 
+**Bachelor’s Thesis titled "Personalized Meal Recommendation System"**
+showcasing the implementation and evaluation of different recommendation techniques (Collaborative Filtering, Content-Based, and Hybrid). Includes API deployment using FastAPI and performance benchmarking using Precision, Recall, and F1 Score.
+
+**Includes** full FastAPI deployment code (as used in PyCharm)  
+**Excludes** dataset due to privacy concerns
+
+---
 ## 📌 Project Overview
 
 This recommendation system integrates:
@@ -18,10 +24,11 @@ User behaviour data (e.g., meal views and purchases) was tracked via **Google An
 
 | Tool / Platform            | Purpose                                                                 |
 |----------------------------|-------------------------------------------------------------------------|
-| **Python**                 | Core language for data processing and model development                |
-| **Pandas, NumPy**          | Data manipulation and numerical operations                              |
-| **Scikit-learn**           | Machine learning models (SVD, TF-IDF, Nearest Neighbors)                |
-| **FastAPI**                | API deployment for serving real-time recommendations                    |
-| **Jupyter Notebook**       | Model development and performance evaluation                            |
-| **Google Analytics 4 (GA4)** | Captures user behaviour (e.g., meal views and purchases)             |
-| **BigQuery**               | Links GA4 user behaviour data with meal metadata for model input        |
+| **Python**                 | Core language for model development                                    |
+| **Pandas, NumPy**          | Data preprocessing and manipulation                                    |
+| **Scikit-learn**           | ML models – SVD (CF), TF-IDF, Nearest Neighbors (CBF)                  |
+| **FastAPI**                | API framework for serving recommendations                             |
+| **Jupyter Notebook**       | Model evaluation and metric analysis                                   |
+| **GA4 (Google Analytics 4)** | User event tracking (views, purchases)                              |
+| **BigQuery**               | SQL-based data linking (user behaviour ↔ meal metadata)                |
+
