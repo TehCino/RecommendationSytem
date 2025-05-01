@@ -47,4 +47,55 @@ Benchmarked Models:
 - Hybrid (non-weighted)
 - Hybrid (weighted)
 
+<p align="center">
+  <img src="ModelEvaluation.jpg" width="700"/>
+  <br/>
+  <em>Evaluation summary of all 4 models</em>
+</p>
+
+---
+
+## Swagger UI API Demonstration
+
+### 🔹 Recommend by Category ID
+
+<p align="center">
+  <img src="Meals_Reco_by_CategoryId.jpg" width="600"/>
+  <br/>
+  <em>Input: Meal Category ID in Swagger UI</em>
+</p>
+
+<p align="center">
+  <img src="Meals_Reco_by_CategoryId_Results.jpg" width="600"/>
+  <br/>
+  <em>Output: Top meals recommended based on category popularity</em>
+</p>
+
+---
+
+### 🔹 Recommend by User ID (Hybrid)
+
+<p align="center">
+  <img src="Meals_Reco_by_id.jpg" width="600"/>
+  <br/>
+  <em>Input: User ID in Swagger UI</em>
+</p>
+
+<p align="center">
+  <img src="Meals_Reco_by_id_Results.jpg" width="600"/>
+  <br/>
+  <em>Output: Hybrid recommendations based on user behavior</em>
+</p>
+
+---
+
+## 📷 Swagger UI Input/Output Screenshots
+
+| Image File                        | Description                                                                 |
+|----------------------------------|-----------------------------------------------------------------------------|
+| `Meals_Reco_by_CategoryId.jpg`         | Input screen: API request using `meal_category_id` with a limit of 5 recommendations |
+| `Meals_Reco_by_CategoryId_Results.jpg` | Output screen: Recommended meals based on the selected `meal_category_id` |
+| `Meals_Reco_by_id.jpg`                | Input screen: API request using `user_id` with a limit of 5 recommendations |
+| `Meals_Reco_by_id_Results.jpg`        | Output screen: Recommended meals based on user behavior and interaction history |
+
 ---
