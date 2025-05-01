@@ -9,7 +9,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 # Load dataset
-file_path = r"" 
+file_path = r""  # Update with actual path
 df = pd.read_csv(file_path)
 
 # Convert data types
@@ -83,7 +83,35 @@ def hybrid_recommend(user_id=None, item_id=None, top_n=5):
 
 # FastAPI route to get recommendations
 @app.get("/recommend/")
-def get_recommendations(user_id: str = None, item_id: str = None, top_n: int = 5):
+def get_recommendations(user_id: str = None, top_n: int = 5):
     """API to get recommendations based on user_id, item_id, or both."""
-    recommendations = hybrid_recommend(user_id, item_id, top_n)
+    recommendations = hybrid_recommend(user_id, top_n)
     return {"recommendations": recommendations}
+
+
+@app.get("/get/")
+def get_popular_meals_by_category(meal_category_id: int, top_n: int = 5):
+    """
+    Return the top N most popular meal_ids within the given meal category.
+    Popularity is based on total action count (view + purchase).
+    """
+    try:
+        # Filter meals with matching category
+        filtered_df = df[df['meal_category_id'] == meal_category_id]
+
+        # Aggregate popularity by counting total actions per meal
+        popularity = (
+            filtered_df.groupby('order_meal_id')['action']
+            .sum()
+            .sort_values(ascending=False)
+            .head(top_n)
+            .index
+            .tolist()
+        )
+
+        return {
+            "input_category": meal_category_id,
+            "recommendations": popularity
+        }
+    except Exception as e:
+        return {"error": str(e)}
