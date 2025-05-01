@@ -36,6 +36,8 @@ User behaviour data (e.g., meal views and purchases) was tracked via **Google An
 
 ## Model Evaluation
 
+- Code: `model_evaluation.py`
+
 Evaluated on test data using:
 - **Precision@5**
 - **Recall@5**
@@ -52,6 +54,7 @@ Benchmarked Models:
   <br/>
   <em>Evaluation summary of all 4 models</em>
 </p>
+
 
 ---
 
@@ -89,7 +92,7 @@ Benchmarked Models:
 
 ---
 
-## 📷 Swagger UI Input/Output Screenshots
+## Swagger UI Input/Output Screenshots
 
 | Image File                        | Description                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------|
