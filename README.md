@@ -61,7 +61,7 @@ Benchmarked Models:
 ## Swagger UI API Demonstration
 - Code: `main.py`
   
-### 🔹 Recommend by Category ID
+### Recommend by Category ID
 
 <p align="center">
   <img src="Meals_Reco_by_CategoryId.jpg" width="600"/>
@@ -77,7 +77,7 @@ Benchmarked Models:
 
 ---
 
-### 🔹 Recommend by User ID (Hybrid)
+### Recommend by User ID (Hybrid)
 
 <p align="center">
   <img src="Meals_Reco_by_id.jpg" width="600"/>
@@ -107,11 +107,11 @@ Benchmarked Models:
 
 To further enhance accuracy, diversity, and scalability, several future improvements are planned:
 
-- **Neural Collaborative Filtering (NCF):** Explore deep learning models to capture non-linear user-item interactions beyond traditional matrix factorization (SVD). NCF leverages multi-layer perceptrons to learn more expressive relationships between users and items [12].
+- **Neural Collaborative Filtering (NCF):** Explore deep learning models to capture non-linear user-item interactions beyond traditional matrix factorization (SVD). NCF leverages multi-layer perceptrons to learn more expressive relationships between users and items.
 
-- **Cold-Start Solutions:** Integrate geolocation-based recommendations to suggest nearby meals based on the user’s current location, addressing the challenge of new users with no interaction history [1][6].
+- **Cold-Start Solutions:** Integrate geolocation-based recommendations to suggest nearby meals based on the user’s current location, addressing the challenge of new users with no interaction history.
 
-- **A/B Testing:** Evaluate real-world performance by serving different recommendation models to user groups and measuring engagement metrics like click-through rate (CTR), conversion rate, and average order value [7][21].
+- **A/B Testing:** Evaluate real-world performance by serving different recommendation models to user groups and measuring engagement metrics like click-through rate (CTR), conversion rate, and average order value.
 
 - **Production Deployment:** Extend the current FastAPI setup into a production-ready system with:
   - Backend integration
